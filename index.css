@@ -19,7 +19,7 @@ body {
 
 .left {
   padding: 30px 0;
-  background-image: url("../assets/images/mesh-vertical.jpeg");
+  background-image: url("./assets/images/mesh-vertical.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
