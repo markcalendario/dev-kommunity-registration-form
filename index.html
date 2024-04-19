@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mark Kenneth S. Calendario" />
+    <meta name="kewords" content="dev, kommunity, dev community" />
+    <meta
+      name="description"
+      content="Dev Kommunity - A community for developers." />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/resets.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Dev Kommunity</title>
+  </head>
+  <body>
+    <div class="left">
+      <div class="container">
+        <div class="wrapper">
+          <img
+            src="./assets/images/logo-transparent.png"
+            alt="dev kommunity logo" />
+
+          <h1>Join in the Dev Kommunity.</h1>
+          <p>
+            Embrace innovation and collaboration in the Dev Kommunity, where
+            developers unite to build the future of technology. Join us today!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="container">
+        <form method="get" action="./success/index.html">
+          <div class="form-group">
+            <p class="highlight">Personal Information</p>
+
+            <div class="input-group">
+              <div class="input">
+                <label for="first-name">First Name</label>
+                <input
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                  required />
+              </div>
+
+              <div class="input">
+                <label for="last-name">Last Name</label>
+                <input
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                  required />
+              </div>
+            </div>
+
+            <div class="input">
+              <label for="birthday">Birthday</label>
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                placeholder="Birthday"
+                required />
+            </div>
+
+            <div class="radio-group">
+              <p class="label">Gender</p>
+              <div class="radios">
+                <div class="radio">
+                  <input
+                    id="male"
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    required />
+                  <label for="male">Male</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="female"
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    required />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="highlight">Contacts</p>
+
+            <div class="input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required />
+            </div>
+
+            <div class="input">
+              <label for="phone">Phone (09xxxxxxxxx)</label>
+              <input
+                id="phone"
+                placeholder="Phone"
+                pattern="^09\d{9}$"
+                required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="highlight">Address</p>
+
+            <div class="input-group">
+              <div class="input">
+                <label for="house-number">House Number</label>
+                <input
+                  id="house-number"
+                  name="house-number"
+                  placeholder="House Number"
+                  pattern="^\d+$"
+                  required />
+              </div>
+
+              <div class="input">
+                <label for="street">Street</label>
+                <input
+                  id="street"
+                  name="street"
+                  placeholder="Street"
+                  required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input">
+                <label for="city">City</label>
+                <select id="city" name="city" required>
+                  <option value="" selected>Select City</option>
+                </select>
+              </div>
+
+              <div class="input">
+                <label for="barangay">Barangay</label>
+                <select id="barangay" name="barangay" required>
+                  <option value="" selected>Select City First</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input">
+              <label for="postal">4-Digit Postal Code</label>
+              <input
+                id="postal"
+                name="postal"
+                placeholder="Postal / Zip Code"
+                pattern="^\d{4}$"
+                required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="highlight">Application Information</p>
+
+            <div class="input">
+              <label for="position">Your Developer Position</label>
+              <select id="position" required>
+                <option value="" selected>Select Position</option>
+                <option value="full-stack">Full-Stack</option>
+                <option value="front-end">Front-End</option>
+                <option value="back-end">Back-End</option>
+                <option value="database">Database</option>
+                <option value="ux">UX Designer</option>
+              </select>
+            </div>
+
+            <div class="radio-group">
+              <p class="label">Position</p>
+              <div class="radios">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="full-time"
+                    name="position"
+                    value="full-time"
+                    required />
+                  <label for="full-time">Full-Time</label>
+                </div>
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="part-time"
+                    name="position"
+                    value="part-time"
+                    required />
+                  <label for="part-time">Part-Time</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input">
+              <label for="position">Resume in PDF format.</label>
+              <input
+                type="file"
+                accept="application/pdf"
+                name="resume"
+                required />
+            </div>
+
+            <div class="input">
+              <label for="notes">Tell us your interests.</label>
+              <textarea
+                id="notes"
+                name="notes"
+                rows="7"
+                placeholder="I want to join because..."
+                required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="highlight">Other Information</p>
+
+            <div class="radio-group">
+              <p class="label">Race</p>
+              <div class="radios">
+                <div class="radio">
+                  <input
+                    id="caucasian"
+                    type="radio"
+                    name="race"
+                    required
+                    value="caucasian" />
+                  <label for="caucasian">Caucasian/White</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="african-american"
+                    type="radio"
+                    name="race"
+                    required
+                    value="african-american" />
+                  <label for="african-american">African American/Black</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="hispanic-latino"
+                    type="radio"
+                    name="race"
+                    required
+                    value="hispanic-latino" />
+                  <label for="hispanic-latino">Hispanic/Latino</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="asian"
+                    type="radio"
+                    name="race"
+                    required
+                    value="asian" />
+                  <label for="asian">Asian</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="native-american"
+                    type="radio"
+                    name="race"
+                    required
+                    value="native-american" />
+                  <label for="native-american">
+                    Native American/American Indian
+                  </label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="pacific-islander"
+                    type="radio"
+                    name="race"
+                    required
+                    value="pacific-islander" />
+                  <label for="pacific-islander">Pacific Islander</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="middle-eastern"
+                    type="radio"
+                    name="race"
+                    required
+                    value="middle-eastern" />
+                  <label for="middle-eastern">Middle Eastern</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="mixed-race"
+                    type="radio"
+                    name="race"
+                    required
+                    value="mixed-race" />
+                  <label for="mixed-race">Mixed Race</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="other"
+                    type="radio"
+                    name="race"
+                    required
+                    value="other" />
+                  <label for="other">Others</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="radio-group">
+              <p class="label">Disability (Optional)</p>
+
+              <div class="radios">
+                <div class="radio">
+                  <input
+                    id="physical"
+                    type="checkbox"
+                    name="disability"
+                    value="physical" />
+                  <label for="physical"> Physical Disability </label>
+                </div>
+
+                <div class="radio">
+                  <input
+                    id="visual"
+                    type="checkbox"
+                    name="disability"
+                    value="visual" />
+                  <label for="visual"> Visual Impairment </label>
+                </div>
+
+                <div class="radio">
+                  <input
+                    id="hearing"
+                    type="checkbox"
+                    name="disability"
+                    value="hearing" />
+                  <label for="hearing"> Hearing Impairment </label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="intellectual"
+                    type="checkbox"
+                    name="disability"
+                    value="intellectual" />
+                  <label for="intellectual">Intellectual Disability</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="mental-health"
+                    type="checkbox"
+                    name="disability"
+                    value="mental-health" />
+                  <label for="mental-health">Mental Health Condition</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="learning"
+                    type="checkbox"
+                    name="disability"
+                    value="learning" />
+                  <label for="learning">Learning Disability</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="neurodevelopmental"
+                    type="checkbox"
+                    name="disability"
+                    value="neurodevelopmental" />
+                  <label for="neurodevelopmental"
+                    >Neurodevelopmental Disability</label
+                  >
+                </div>
+                <div class="radio">
+                  <input
+                    id="chronic-illness"
+                    type="checkbox"
+                    name="disability"
+                    value="chronic-illness" />
+                  <label for="chronic-illness">Chronic Illness</label>
+                </div>
+                <div class="radio">
+                  <input
+                    id="other-disability"
+                    type="checkbox"
+                    name="disability"
+                    value="other-disability" />
+                  <label for="other-disability">Others</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Join Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>

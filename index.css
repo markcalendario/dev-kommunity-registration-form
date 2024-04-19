@@ -1,0 +1,137 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "left"
+    "right";
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-areas: "left right";
+    grid-template-rows: unset;
+    grid-template-columns: 350px 1fr;
+  }
+}
+
+/* Left */
+
+.left {
+  padding: 30px 0;
+  background-image: url("../assets/images/mesh-vertical.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: left;
+}
+
+@media screen and (min-width: 768px) {
+  .left {
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+  }
+
+  .left .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.left .container .wrapper > *:not(:first-child):not(:last-child) {
+  margin: 10px 0;
+}
+
+.left .container .wrapper {
+  color: var(--gray-0);
+}
+
+.left .container .wrapper img {
+  max-width: 150px;
+}
+
+/* Right */
+
+.right {
+  padding: 30px 0;
+  background-color: var(--gray-9);
+  grid-area: right;
+}
+
+.right .container form > *:not(:first-child):not(:last-child) {
+  margin: 20px 0;
+}
+
+.right .container form .form-group {
+  background-color: var(--gray-8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.right .container form .form-group > *:not(:first-child):not(:last-child) {
+  margin: 20px 0;
+}
+
+/* Input Grouping */
+
+.right .container form .form-group .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .right .container form .form-group .input-group {
+    flex-direction: row;
+  }
+}
+
+.right .container form .form-group textarea {
+  resize: none;
+}
+
+/* Radio Grouping */
+
+.right .container form .form-group .radio-group .label {
+  color: var(--gray-3);
+}
+
+.right .container form .form-group .radio-group .radios {
+  margin-top: 5px;
+}
+
+.right .container form .form-group .radio-group .radios {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.right .container form .form-group .radio-group .radios .radio {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .right .container form .form-group .radio-group .radios {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .right .container form .form-group .radio-group .radios .radio {
+    flex: 1;
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+
+.right .container form button {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--gray-0);
+  border: 0;
+  font-weight: bold;
+  border-radius: 7px;
+}

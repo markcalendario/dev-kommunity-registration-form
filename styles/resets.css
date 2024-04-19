@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Containers */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* For Fonts */
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/Geist-Regular.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/Geist-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/Geist-UltraBlack.otf");
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label {
+  font-family: "Circular", sans-serif;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--gray-1);
+}
+
+label {
+  color: var(--gray-3);
+}

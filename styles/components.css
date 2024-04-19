@@ -1,0 +1,60 @@
+.input {
+  width: 100%;
+}
+
+.input input,
+.input select,
+.input textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--gray-7);
+  color: var(--gray-2);
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.input input::placeholder,
+textarea::placeholder {
+  color: var(--gray-4);
+}
+
+.input input:hover,
+.input select:hover,
+.input textarea:hover {
+  background-color: var(--gray-6);
+}
+
+.input input:active,
+.input select:active,
+.input textarea {
+  outline: 1px var(--blue) solid;
+}
+
+.input input:focus,
+.input select:focus,
+.input textarea:focus {
+  outline: 2px var(--blue) solid;
+}
+
+/* Radio */
+
+.radio {
+  background-color: var(--gray-7);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Highlighting */
+
+.highlight {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  border-left: 5px white solid;
+  font-weight: bold;
+}
