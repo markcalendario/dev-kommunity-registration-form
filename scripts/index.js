@@ -1,12 +1,8 @@
 const citySelector = document.getElementById("city");
 const barangaySelector = document.getElementById("barangay");
-var cities;
 
 async function renderCities() {
-  const response = await fetch("./assets/data/city-barangays.json");
-  cities = await response.json();
-
-  for (const city in cities) {
+  for (const city in citiesBarangaysData) {
     const option = document.createElement("option");
     option.text = city;
     option.value = city;
@@ -19,7 +15,7 @@ function handleCityChange(evt) {
   resetBarangayOptions();
   if (!evt.target.value) return;
 
-  const barangays = cities[evt.target.value] || [];
+  const barangays = citiesBarangaysData[evt.target.value] || [];
 
   for (const barangay of barangays) {
     const option = document.createElement("option");

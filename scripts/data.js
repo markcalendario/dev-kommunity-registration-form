@@ -1,4 +1,4 @@
-{
+const citiesBarangaysData = {
   "CITY OF LAS PIÑAS": [
     "ALMANZA DOS",
     "ALMANZA UNO",
@@ -1726,7 +1726,7 @@
     "TANZA 1",
     "TANZA 2"
   ],
-  "PATEROS": [
+  PATEROS: [
     "AGUHO",
     "MAGTANGGOL",
     "MARTIRES DEL 96",
@@ -1738,7 +1738,7 @@
     "SANTO ROSARIO-SILANGAN",
     "TABACALERA"
   ],
-  "TAGUIG": [
+  TAGUIG: [
     "BAGUMBAYAN",
     "BAMBANG",
     "CALZADA",
@@ -1768,4 +1768,4 @@
     "WAWA",
     "WESTERN BICUTAN"
   ]
-}
+};
